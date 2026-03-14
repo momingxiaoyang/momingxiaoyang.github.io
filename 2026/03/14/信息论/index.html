@@ -1,0 +1,624 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>信息论详细内容 | 莫名小痒的博客</title><meta name="author" content="莫名小痒"><meta name="copyright" content="莫名小痒"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="信息论全部知识">
+<meta property="og:type" content="article">
+<meta property="og:title" content="信息论详细内容">
+<meta property="og:url" content="https://momingxiaoyang.github.io/2026/03/14/%E4%BF%A1%E6%81%AF%E8%AE%BA/index.html">
+<meta property="og:site_name" content="莫名小痒的博客">
+<meta property="og:description" content="信息论全部知识">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://momingxiaoyang.github.io/img/KaoYan/fushi/dontKonw.pic.jpg">
+<meta property="article:published_time" content="2026-03-14T10:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-14T09:42:17.982Z">
+<meta property="article:author" content="莫名小痒">
+<meta property="article:tag" content="考研">
+<meta property="article:tag" content="复试">
+<meta property="article:tag" content="信息论">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://momingxiaoyang.github.io/img/KaoYan/fushi/dontKonw.pic.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://momingxiaoyang.github.io/2026/03/14/%E4%BF%A1%E6%81%AF%E8%AE%BA/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁体汉字","msgToSimplifiedChinese":"简体汉字"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '信息论详细内容',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: true,
+  postUpdate: '2026-03-14 17:42:17'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 8 || hour >= 23
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="/img/load_animation/flat-top.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/head_sculpture.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">45</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">34</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 历史</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 拓展</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/../img/KaoYan/fushi/%E3%80%90%E5%93%B2%E9%A3%8E%E5%A3%81%E7%BA%B8%E3%80%91%E4%BF%A1%E6%81%AF%E6%B5%81%E8%BD%AC-%E5%83%8F%E7%B4%A0%E9%A3%8E%E6%A0%BC%20(1).png')"><nav id="nav"><span id="blog-info"><a href="/" title="莫名小痒的博客"><span class="site-name">莫名小痒的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 历史</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 拓展</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">信息论详细内容</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-03-14T10:00:00.000Z" title="发表于 2026-03-14 18:00:00">2026-03-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-03-14T09:42:17.982Z" title="更新于 2026-03-14 17:42:17">2026-03-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%80%83%E7%A0%94/">考研</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">8.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>26分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="信息论详细内容"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>信息论</h1>
+<h2 id="一、信息的基本概念">一、信息的基本概念</h2>
+<p>香农对信息的革命性定义是<strong>消除不确定性</strong>，简单来说，信息就是<strong>不确定性的减少</strong>。</p>
+<p>在信息论中，一个消息的信息量大小取决于它的<strong>意外程度</strong>（即自信息量），核心思想是<strong>越意外，信息量越大</strong>。这意味着发生概率越小的事件，一旦发生，其提供的<strong>信息量就越大</strong>。</p>
+<p>信息论中的“信息”与日常语言中的“信息”有着本质区别：<strong>日常信息关心的是“意义”</strong>（即语义），而<strong>信息论关心的是“概率”</strong>（即统计属性）。在面试中需特别注意，信息论研究的信息<strong>没有真假对错之分</strong>，也<strong>没有价值高低之别</strong>，它纯粹是从<strong>统计学角度</strong>来度量不确定性的消除程度。</p>
+<h2 id="二、信息量、信息熵、条件熵">二、信息量、信息熵、条件熵</h2>
+<h3 id="2-1-信息量">2.1 信息量</h3>
+<p>自信息量的定义为</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">I(p) = -\log_2(p)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mopen">(</span><span class="mord mathnormal">p</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">p</span><span class="mclose">)</span></span></span></span></span></p>
+<p>在面试中，关于<strong>为什么采用对数形式</strong>，通常有三个核心理由：</p>
+<ul>
+<li>第一是<strong>可加性</strong>，即两个独立事件共同发生的总信息量应该等于各自信息量之和；</li>
+<li>第二是<strong>非负性</strong>，由于概率 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span> 在 0 到 1 之间，取负对数确保了信息量始终大于等于 0；</li>
+<li>第三是<strong>符合直观理解</strong>，概率越小的事件发生，其产生的信息量越大。</li>
+</ul>
+<h3 id="2-2-信息熵">2.2 信息熵</h3>
+<p>信息熵的数学定义由香农在 1948 年提出，用于<strong>量化一个离散随机变量的不确定性</strong>，其公式为</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mo>∑</mo><mi>P</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>P</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X) = -\sum P(x_i) \log_b P(x_i)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.6em;vertical-align:-0.55em;"></span><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-symbol large-op" style="position:relative;top:0em;">∑</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.242em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>关于信息熵的几个核心要点如下：</p>
+<ul>
+<li><strong>它是“平均信息量”</strong>：从统计学角度看，熵是自信息量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">I(x_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 的数学期望，代表了信源每发出一个符号所提供的平均信息。</li>
+<li><strong>它与概率分布有关</strong>：信源的不确定性越大（即各符号概率越接近均匀分布），信息熵就越大；当某一事件概率为 1 时，熵为 0。</li>
+<li><strong>它与“比特”的关系</strong>：当对数底数为 2 时，熵的单位是 <strong>bit</strong>，它代表了描述该信源状态所需的最少二进制位数。</li>
+</ul>
+<p>信息熵在工程应用中具有至关重要的意义，被视为<strong>数据压缩领域的“终极界限”</strong>。它回答了一个根本性问题：<strong>一个文件，最小能压缩到多小？</strong></p>
+<p>其具体的意义体现在：</p>
+<ul>
+<li><strong>设立不可逾越的极限</strong>：信息熵像热力学第二定律一样，为所有无损压缩算法划定了一条红线，<strong>任何无损压缩后的平均长度都不可能低于信息熵</strong>。</li>
+<li><strong>指导压缩策略</strong>：既然极限已知，压缩算法优化的方向就是通过编码手段（如哈夫曼编码、算术编码）使码字长度<strong>无限逼近这个理论极限</strong>。</li>
+</ul>
+<h3 id="2-3-条件熵">2.3 条件熵</h3>
+<ul>
+<li>
+<p><strong>条件熵 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>Y</mi><mi mathvariant="normal">∣</mi><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(Y|X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span></strong> 表示的是，在<strong>已知随机变量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 的条件下</strong>，随机变量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> <strong>平均还剩下多少不确定性</strong>。</p>
+<p>其核心计算公式为：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>Y</mi><mi mathvariant="normal">∣</mi><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><munder><mo>∑</mo><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></munder><mi>p</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>H</mi><mo stretchy="false">(</mo><mi>Y</mi><mi mathvariant="normal">∣</mi><mi>X</mi><mo>=</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></munder><munder><mo>∑</mo><mrow><mi>y</mi><mo>∈</mo><mi>Y</mi></mrow></munder><mi>p</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo><mi>log</mi><mo>⁡</mo><mi>p</mi><mo stretchy="false">(</mo><mi>y</mi><mi mathvariant="normal">∣</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(Y|X) = \sum_{x \in X} p(x) H(Y|X=x) = -\sum_{x \in X} \sum_{y \in Y} p(x, y) \log p(y|x)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.3717em;vertical-align:-1.3217em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8557em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mrel mtight">∈</span><span class="mord mathnormal mtight" style="margin-right:0.07847em;">X</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3217em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.4804em;vertical-align:-1.4304em;"></span><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8557em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mrel mtight">∈</span><span class="mord mathnormal mtight" style="margin-right:0.07847em;">X</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3217em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8557em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span><span class="mrel mtight">∈</span><span class="mord mathnormal mtight" style="margin-right:0.22222em;">Y</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4304em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord">∣</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></span></p>
+<ul>
+<li><strong>条件熵 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> 无条件熵</strong>：即 <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>Y</mi><mi mathvariant="normal">∣</mi><mi>X</mi><mo stretchy="false">)</mo><mo>≤</mo><mi>H</mi><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(Y|X) \leq H(Y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mclose">)</span></span></span></span></strong>。这是信息论中极具哲学意义的结论：<strong>知道一些信息，绝不会增加你对另一个事物的不确定性</strong>。信息只会减少不确定性，或者在完全无关时保持不变，但<strong>绝不会增加</strong>。</li>
+<li><strong>与独立性的关系</strong>：当且仅当 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 与 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> <strong>相互独立</strong>时，等号成立，意味着观察 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 对消除 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> 的不确定性没有任何帮助。</li>
+<li><strong>不对称性</strong>：需要注意 <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>Y</mi><mi mathvariant="normal">∣</mi><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(Y|X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span> 通常不等于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mi mathvariant="normal">∣</mi><mi>Y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X|Y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mclose">)</span></span></span></span></strong>，这反映了信息影响的单向性。</li>
+</ul>
+<p>条件熵在实际工程中的意义非常广泛：</p>
+<ul>
+<li><strong>量化“信息价值”的黄金标准</strong>：它能衡量一个变量对于消除另一个变量不确定性的具体贡献。</li>
+<li><strong>机器学习的“特征筛选器”和“建楼图纸”</strong>：在构建模型（如决策树）时，通过计算条件熵来评估特征的重要性，<strong>条件熵下降越快，说明该特征的分类能力越强</strong>。</li>
+<li><strong>通信工程的“噪音听诊器”</strong>：在有噪信道中，接收端收到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> 后关于发送端 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 的条件熵 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mi mathvariant="normal">∣</mi><mi>Y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X|Y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mclose">)</span></span></span></span> 被称为<strong>信道疑义度</strong>，它直接量化了<strong>噪声造成的平均信息丢失量</strong>。</li>
+<li><strong>自然语言处理的“流利度考官”</strong>：在语言模型中，给定前文预测后文的条件熵越低，说明<strong>语言规律性越强，预测越准确</strong>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-4-信息论与人工智能">2.4 信息论与人工智能</h3>
+<p>信息论为人工智能提供了<strong>底层的数学框架</strong>，它不仅定义了数据的价值，还为模型的优化指明了方向。</p>
+<p>在人工智能中，<strong>信息量（自信息）<strong>主要用于衡量</strong>事件的稀缺性</strong>。一个极低概率发生的样本（如异常交易、罕见故障）具有极高的信息量，这指导了模型中的<strong>异常检测</strong>算法。同时，**注意力机制（Attention）**本质上也是在输入序列中寻找那些“信息量最大”的特征进行聚焦。</p>
+<p><strong>信息熵</strong>在 AI 中被视为<strong>预测不确定性</strong>的度量。在训练过程中，如果模型对某个样本的预测概率分布非常平坦（熵很高），说明模型对此样本非常“困惑”。**主动学习（Active Learning）**就是利用这一特性，专门挑选熵较大的样本让人工标注，从而实现最高效的模型进化。</p>
+<p><strong>条件熵</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>Y</mi><mi mathvariant="normal">∣</mi><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(Y|X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span> 则定义了<strong>监督学习的理论天花板</strong>。在已知特征 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> 的情况下，标签 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> 剩下的不确定性就是模型无论如何也无法消除的误差。在<strong>特征选择</strong>（如决策树）中，我们追求的是最大化<strong>信息增益</strong>，其本质就是<strong>尽可能大地降低条件熵</strong>，选出对分类贡献最大的特征。</p>
+<p><strong>交叉熵（Cross-Entropy）<strong>是信息论与 AI 结合最紧密的地方。在分类任务中，我们通常使用交叉熵作为</strong>损失函数</strong>。其逻辑非常简单：交叉熵衡量了“模型预测的分布”与“真实标签分布”之间的<strong>差异程度</strong>。<strong>训练模型的过程，本质上就是通过最小化交叉熵损失，让模型学会如何消除不确定性，使预测结果无限逼近真实分布。</strong></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>P</mi><mo separator="true">,</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>i</mi></munder><mi>P</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mi>log</mi><mo>⁡</mo><mi>Q</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(P, Q) = -\sum_{i} P(x_i) \log Q(x_i)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">Q</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.3277em;vertical-align:-1.2777em;"></span><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">Q</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>其中 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> 是真实分布，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span> 是预测分布。相比传统的均方误差，交叉熵在分类问题中具有<strong>更快的收敛速度</strong>和<strong>更明确的概率学解释</strong>（等价于极大似然估计）。</p>
+<h2 id="四、香农三大定律">四、香农三大定律</h2>
+<h3 id="4-1-香农第一定律">4.1 香农第一定律</h3>
+<p><strong>香农第一定律：无失真信源编码定理——压缩的极限</strong></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mo>∑</mo><mi>P</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>P</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X) = -\sum P(x_i) \log_b P(x_i)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.6em;vertical-align:-0.55em;"></span><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-symbol large-op" style="position:relative;top:0em;">∑</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.242em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p><strong>香农第一定律（无失真信源编码定理）</strong> 解决了通信中的<strong>有效性问题</strong>，它回答了：<strong>我们能把数据压缩到什么程度，同时还能保证 100% 还原？</strong></p>
+<p>关于该定理的物理意义：</p>
+<ul>
+<li><strong>压缩的极限</strong>：熵 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span> 代表了信源平均每个符号所含的信息量。若使用二进制编码，<strong>平均每个符号所需的比特数至少为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span></strong>。</li>
+<li><strong>不可逾越性</strong>：如果强行让平均码长小于熵，<strong>必然会产生失真</strong>，无法实现无失真译码。</li>
+<li><strong>等概率分布的意义</strong>：编码的最优状态是让码符号尽可能服从<strong>等概率分布</strong>，此时每个码符号携带的信息量达到最大，从而实现<strong>最少码字传输最大信息</strong>。</li>
+</ul>
+<p>在衡量编码优劣时，使用<strong>编码效率</strong>公式：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>η</mi><mo>=</mo><mfrac><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mtext>平均码长</mtext></mfrac></mrow><annotation encoding="application/x-tex">\eta = \frac{H(X)}{\text{平均码长}}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">η</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.113em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">平均码长</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>关于<strong>等长编码与变长编码</strong>的对比：</p>
+<ul>
+<li><strong>等长编码</strong>：如 8 位 ASCII 码。简单但效率受限，仅在<strong>信源符号等概率分布</strong>时能达到熵极限；对于不等概率信源会造成比特浪费。</li>
+<li><strong>变长编码</strong>：核心思想是<strong>概率高的用短码，概率低的用长码</strong>。这是实现<strong>无限逼近熵极限</strong>的主要手段。</li>
+<li><strong>实现方式</strong>：香农第一定律仅证明了极限的存在性，实际工程中通过<strong>霍夫曼编码（Huffman Coding）<strong>和</strong>算术编码</strong>等具体算法来逼近这一极限。</li>
+</ul>
+<h3 id="4-2-香农第二定律">4.2 香农第二定律</h3>
+<p><strong>香农第二定律：有噪信道编码定理</strong></p>
+<p><strong>香农第二定律（有噪信道编码定理）</strong> 解决了通信中关于<strong>可靠性</strong>的核心问题：在有噪声的信道里，我们能否实现<strong>无差错（或误码率任意小）<strong>的传输？以及传输速率的</strong>上限</strong>是多少？</p>
+<p><strong>信道容量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span></strong> 是信道的一个固有参数，它表示在这个信道上能够<strong>可靠传输的最大信息速率</strong>。关于信道容量的直观理解如下：</p>
+<ul>
+<li>如果信道完全没有噪声，容量就是每个符号能携带的最大信息量。</li>
+<li>如果信道噪声很大，容量就会随之变小。</li>
+<li><strong>如果传输速率超过了容量，那么无论采用何种纠错编码，错误都无法避免</strong>。</li>
+</ul>
+<p>香农第二定律的核心内容（香农公式）为：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mo>=</mo><mi>B</mi><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>S</mi><mi>N</mi></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C = B \log_2(1 + \frac{S}{N})
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:2.0463em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>其物理意义与深度解读是面试中的高频考点：</p>
+<ul>
+<li><strong>可靠传输是可能的</strong>：只要信息传输速率 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>≤</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">R \leq C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8193em;vertical-align:-0.136em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>，就一定存在一种编码方式，使得<strong>误码率可以达到任意小</strong>。这证明了在噪声环境下实现高可靠通信的数学可能性。</li>
+<li><strong>信道容量是硬上限</strong>：信道容量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> 划定了一个不可逾越的<strong>理论极限速率</strong>。</li>
+<li><strong>带宽与信噪比的互换</strong>：公式揭示了带宽 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> 和信噪比 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi mathvariant="normal">/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">S/N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> 之间的制约关系。在保持容量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> 不变的前提下，可以通过<strong>增加带宽来降低对信噪比的要求</strong>（例如扩频通信），或者通过<strong>提高信号功率来弥补带宽的不足</strong>。</li>
+</ul>
+<h3 id="4-3-香农第三定律">4.3 香农第三定律</h3>
+<p><strong>香农第三定律：保真度准则下的信源编码定理——率失真理论</strong></p>
+<p><strong>香农第三定律（率失真理论）</strong> 解决了通信中关于<strong>有损压缩</strong>的极限问题：如果允许一定程度的失真（例如牺牲人眼不敏感的图像细节），描述信源所需的<strong>最小比特率</strong>可以降到多低？</p>
+<p><strong>率失真函数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(D)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span></strong> 的数学定义是在满足平均失真限制条件 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> 的情况下，信源与重建信源之间<strong>互信息的最小值</strong>。 其通用的定义公式为：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo><mo>=</mo><munder><mrow><mi>min</mi><mo>⁡</mo></mrow><mrow><mi>p</mi><mo stretchy="false">(</mo><mover accent="true"><mi>x</mi><mo>^</mo></mover><mi mathvariant="normal">∣</mi><mi>x</mi><mo stretchy="false">)</mo><mo>:</mo><munder><mo>∑</mo><mrow><mi>x</mi><mo separator="true">,</mo><mover accent="true"><mi>x</mi><mo>^</mo></mover></mrow></munder><mi>p</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>p</mi><mo stretchy="false">(</mo><mover accent="true"><mi>x</mi><mo>^</mo></mover><mi mathvariant="normal">∣</mi><mi>x</mi><mo stretchy="false">)</mo><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mover accent="true"><mi>x</mi><mo>^</mo></mover><mo stretchy="false">)</mo><mo>≤</mo><mi>D</mi></mrow></munder><mi>I</mi><mo stretchy="false">(</mo><mi>X</mi><mo separator="true">;</mo><mover accent="true"><mi>X</mi><mo>^</mo></mover><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(D) = \min_{p(\hat{x}|x): \sum_{x, \hat{x}} p(x)p(\hat{x}|x)d(x, \hat{x}) \le D} I(X; \hat{X})
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.06em;vertical-align:-1.1132em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6679em;"><span style="top:-2.309em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span><span class="mopen mtight">(</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mathnormal mtight">x</span></span><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.2222em;"><span class="mord mtight">^</span></span></span></span></span></span></span><span class="mord mtight">∣</span><span class="mord mathnormal mtight">x</span><span class="mclose mtight">)</span><span class="mrel mtight">:</span><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1746em;"><span style="top:-2.1786em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mpunct mtight">,</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-2.6944em;"><span class="pstrut" style="height:2.6944em;"></span><span class="mord mathnormal mtight">x</span></span><span style="top:-2.6944em;"><span class="pstrut" style="height:2.6944em;"></span><span class="accent-body" style="left:-0.2222em;"><span class="mord mtight">^</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4603em;"><span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mathnormal mtight">p</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">x</span><span class="mclose mtight">)</span><span class="mord mathnormal mtight">p</span><span class="mopen mtight">(</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mathnormal mtight">x</span></span><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.2222em;"><span class="mord mtight">^</span></span></span></span></span></span></span><span class="mord mtight">∣</span><span class="mord mathnormal mtight">x</span><span class="mclose mtight">)</span><span class="mord mathnormal mtight">d</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">x</span><span class="mpunct mtight">,</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mathnormal mtight">x</span></span><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.2222em;"><span class="mord mtight">^</span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mrel mtight">≤</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">D</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">min</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.1132em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">^</span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>其核心性质围绕着<strong>率失真函数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(D)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span></strong> 展开，定理陈述如下：</p>
+<ul>
+<li><strong>正定理（可达性）</strong>：只要编码速率 <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&gt;</mo><mi>R</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R &gt; R(D)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span></strong>，当码长足够大时，总能找到一种编码方案使得平均失真不超过允许值。</li>
+<li><strong>反定理（不可达性）</strong>：如果编码速率 <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&lt;</mo><mi>R</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R &lt; R(D)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span></strong>，无论采用何种编码，平均失真必然大于允许值。这意味着 <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(D)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span> 是在给定失真约束下的最低理论码率</strong>。</li>
+</ul>
+<p>关于香农第三定律的物理意义与深度解读：</p>
+<ul>
+<li><strong>限失真压缩的理论极限</strong>：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(D)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span> 函数是所有有损压缩算法（如 <strong>JPEG、MP3、H.264</strong>）无法逾越的下限，为这些工程标准提供了性能基准。</li>
+<li><strong>质量与压缩比的权衡</strong>：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(D)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span> 的递减性质反映了工程中的基本折衷：想要<strong>更高的压缩比</strong>（更小的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>），就必须接受<strong>更大的失真</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>；想要更高的保真度，就必须花费更多的比特。</li>
+<li><strong>与第一定律的关系</strong>：这是面试中的<strong>绝佳加分点</strong>。香农第一定律实际上是第三定律在 <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">D=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> 时的特例</strong>。当不允许任何失真时，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord">0</span><span class="mclose">)</span></span></span></span> 就等于<strong>信源熵 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span></strong>。因此，第三定律统一了无损和有损压缩的理论。</li>
+</ul>
+<h2 id="五、信源编码">五、信源编码</h2>
+<p>信源编码的核心任务是提高通信的<strong>有效性</strong>，即通过压缩技术尽可能去除信源内部的<strong>统计冗余</strong>。根据在压缩过程中是否允许信息损失，技术路线分为<strong>无失真编码</strong>和<strong>限失真编码</strong>两大阵营。</p>
+<h3 id="5-1-无失真编码">5.1 无失真编码</h3>
+<p><strong>无失真编码</strong>被形象地称为无损的“收纳大师”。它的物理特性是在压缩和解压过程中，<strong>信息不丢失任何一丁点</strong>，还原后的数据与原始数据<strong>完全一致</strong>。这种编码方式的性能上限由**香农第一定律（熵极限）**决定。</p>
+<p>三种核心无失真编码技术：</p>
+<ul>
+<li><strong>香农-范诺编码（Shannon-Fano Coding）</strong>：早期的一种编码方法，虽然能逼近熵，但通常不是最优的。</li>
+<li><strong>霍夫曼编码（Huffman Coding）</strong>：<strong>最经典的变长编码算法</strong>。它通过构建最优二叉树，确保<strong>概率高的符号对应短码，概率低的符号对应长码</strong>，在整数码长约束下实现了<strong>最短的平均码长</strong>。</li>
+<li><strong>算术编码（Arithmetic Coding）</strong>：一种更先进的非分组编码技术。它将整个消息序列映射到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[0, 1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 区间内的一个实数值。相比霍夫曼编码，算术编码<strong>能打破整数码长的限制</strong>，因此其效率<strong>比霍夫曼编码更接近熵极限</strong>。</li>
+</ul>
+<p>在面试中，你可能会遇到这样的提问：“<strong>既然无失真编码这么完美，为什么我们还需要有损压缩？</strong>” 你的回答点位应在于：<strong>无失真编码的压缩比受熵的限制</strong>，对于图像、视频等数据量极大的信源，仅靠无损压缩无法满足现有带宽的传输需求。</p>
+<h3 id="5-2-限失真编码">5.2 限失真编码</h3>
+<p><strong>限失真编码（Lossy Compression）</strong> 被形象地称为聪明的“印象派画家”，其核心思想是：<strong>允许一定的、可控的失真，来换取更高的压缩比</strong>。这种方法在图像、视频和音频传输中占据主导地位，因为它利用了人类感官对某些细节不敏感的特性。</p>
+<p>几种限失真编码技术：</p>
+<ul>
+<li><strong>预测编码（Predictive Coding）</strong>：利用信号的时间或空间相关性，仅传输<strong>当前值与预测值之间的差值</strong>。</li>
+<li><strong>变换编码（Transform Coding）</strong>：被誉为限失真编码的**“王牌”**。它将空间域信号通过数学变换（如 <strong>DCT 变换</strong>）转换到频率域，从而集中能量并去除冗余，是 <strong>JPEG 和 MPEG</strong> 标准的核心。</li>
+<li><strong>矢量量化（Vector Quantization）</strong>：它不是对单个数值进行量化，而是将<strong>一组数据（一个矢量）作为一个整体</strong>，利用“码本”中与之最接近的码字来代替。虽然压缩率极高，但可能导致图像质量受损。</li>
+<li><strong>子带编码（Sub-band Coding）</strong>：将信号通过滤波器分成不同的<strong>频率子带</strong>（低频、中频、高频）。根据不同频带的重要性分配比特数，例如给<strong>人耳敏感的低频子带分配更多比特</strong>，而不敏感的高频则分配较少甚至丢弃。<strong>MP3 音频编码</strong>就采用了类似思想，并结合了<strong>心理声学模型</strong>。</li>
+</ul>
+<h3 id="5-3-信源编码的核心评价标准">5.3 信源编码的核心评价标准</h3>
+<p>衡量一个<strong>信源编码器</strong>优劣的标准主要从有效性、复杂度和质量三个维度进行评估：</p>
+<ul>
+<li><strong>压缩比（Compression Ratio）</strong>：这是衡量<strong>有效性</strong>最直观的指标。其计算公式为 <strong>压缩比 = 原始数据大小 / 压缩后数据大小</strong>。压缩比越高，代表压缩效果越好，节省的存储空间或传输带宽就越多。</li>
+<li><strong>编码/解码速度（Codec Speed）</strong>：这决定了算法在实际应用中的<strong>可行性</strong>。例如，<strong>霍夫曼编码</strong>速度极快，非常适合视频会议等<strong>实时通信</strong>场景；而<strong>算术编码</strong>虽然压缩比更高，但计算量大，通常更适合对时间不敏感的<strong>文件存储</strong>。</li>
+<li><strong>失真度（Distortion）</strong>：对于<strong>限失真编码</strong>而言，这是权衡质量的关键指标。评价方式分为两种：
+<ol>
+<li><strong>客观评价</strong>：最常用的是<strong>峰值信噪比（PSNR）</strong>。在面试中需记住，<strong>PSNR 值越高，代表失真越小</strong>，重建的图像质量越好。</li>
+<li><strong>主观评价</strong>：即<strong>平均意见分（MOS）</strong>。通过人类观察者打分（1-5 分），这是<strong>最符合人类感知</strong>的评价方式，因为数学指标 PSNR 有时并不能完全反映人眼的真实感受。</li>
+</ol>
+</li>
+</ul>
+<h2 id="六、信道编码">六、信道编码</h2>
+<h3 id="6-1-信道编码的本质">6.1 信道编码的本质</h3>
+<p><strong>信道编码</strong>（也称为<strong>差错控制编码</strong>）的核心任务是提高通信系统的<strong>可靠性</strong>。它通过在发送端给信息序列附加<strong>监督码元（冗余）</strong>，使码元之间建立起确定的数学约束关系。接收端则利用这种规则进行检验，一旦传输发生错误，这种约束关系就会被破坏，从而实现<strong>发现甚至纠正错误</strong>的功能。</p>
+<p>关于信道编码需要掌握以下逻辑：</p>
+<ul>
+<li><strong>信道编码的本质</strong>：它是典型的<strong>以空间换时间/质量</strong>的策略，即<strong>以传输效率（带宽）的牺牲换取传输可靠性的提升</strong>。在工程设计中，这始终是一个核心的折中（Trade-off）。</li>
+<li><strong>为什么需要信道编码</strong>：数字信号在信道传输中会受到各种物理干扰，导致接收端产生<strong>误码</strong>。对于图像传输，误码会导致画面跳跃、不连续或出现马赛克。</li>
+</ul>
+<p>信道差错主要分为两种形式：</p>
+<ul>
+<li><strong>随机错误</strong>：码元间的错误是<strong>相互独立</strong>的，通常由信道中的加性高斯白噪声（AWGN）引起。</li>
+<li><strong>突发错误</strong>：码元错误<strong>成串出现</strong>，即一个码元出错往往带动周围码元也出错，通常由脉冲干扰或衰落（Fading）引起。</li>
+</ul>
+<p><strong>信道编码的理论上限</strong>：由<strong>香农第二定律</strong>定义的信道容量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> 决定。只要编码后的信息速率 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>≤</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">R \le C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8193em;vertical-align:-0.136em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>，理论上就可以通过信道编码实现无差错传输。</p>
+<h3 id="6-2-信道编码发展历程">6.2 信道编码发展历程</h3>
+<p>信道编码的发展历程是一个不断挑战<strong>香农极限</strong>的过程，主要分为三个阶段：</p>
+<ul>
+<li>
+<p><strong>第一代：分组码时代（1940s-1950s）</strong>：<br>
+1949 年<strong>汉明码</strong>的诞生标志着纠错编码理论的开端。汉明码是一种线性分组码，主要通过增加监督位来实现<strong>单比特纠错</strong>，奠定了信道编码的数学基础。</p>
+</li>
+<li>
+<p><strong>第二代：卷积码时代（1955-1990s）</strong>：<br>
+1955 年由 Elias 提出。卷积码与分组码的根本区别在于：它<strong>充分利用了各个信息块之间的相关性</strong>（具有记忆性）。1967 年 <strong>Viterbi 译码算法</strong>的提出是关键转折点，它使得卷积码在 <strong>GSM、3G 以及卫星通信</strong>等系统中得到了极广泛的应用。</p>
+</li>
+<li>
+<p><strong>第三代：逼近香农极限的时代（1993年至今）</strong>：<br>
+这一阶段的编码技术使通信效率达到了理论上的巅峰：</p>
+<ol>
+<li><strong>Turbo 码的革命</strong>：1993 年提出，通过<strong>迭代译码</strong>的方法，首次使信道编码效率<strong>接近香农极限</strong>，震撼了通信界。</li>
+<li><strong>LDPC 码（低密度奇偶校验码）</strong>：虽然早在 1962 年提出，但直到 90 年代末才被重新发现。其<strong>校验矩阵具有稀疏性</strong>，这一特性使得译码复杂度较低且纠错性能极其优异，是目前 <strong>5G 数据信道</strong>的核心标准。</li>
+<li><strong>Polar 码（极化码）</strong>：2009 年由 Arikan 提出，它是<strong>第一种被理论证明可以达到二进制输入对称信道容量</strong>的编码方案，被选为 <strong>5G 控制信道</strong>的编码标准。</li>
+</ol>
+</li>
+</ul>
+<h2 id="七、常见问题">七、常见问题</h2>
+<p>1、信息量的意义？</p>
+<p>2、信息熵有什么用？有什么意义？</p>
+<p>3、什么是信道容量？</p>
+<p>4、信源编码有什么用，它的动机和目的是什么？</p>
+<p>5、信源编码有什么核心技术？它们具体是什么做的？</p>
+<p>6、为什么需要信道编码？</p>
+<h2 id="八、信息论的学科探索">八、信息论的学科探索</h2>
+<h3 id="8-1-溯源与终极目标">8.1 溯源与终极目标</h3>
+<p><strong>1. 历史背景：学科诞生的痛点与革命</strong><br>
+信息论诞生于 20 世纪 40 年代（1948 年），当时通信领域正处于从模拟向数字跨越的前夜。当时的物理与工程痛点在于：<strong>人们普遍认为噪声是通信中不可逾越的障碍</strong>。在香农之前，工程师们认为如果要降低误码率，唯一的办法是不断增加信号发射功率或者极度放慢传输速度。香农通过将<strong>通信过程数学化</strong>，指出噪声环境下依然可以实现<strong>近乎完美的可靠传输</strong>，前提是传输速率不超过信道容量。这一发现将通信从一种“玄学和经验技巧”彻底转变为一门<strong>严谨的数学学科</strong>。</p>
+<p><strong>2. 终极目标：一句话概括</strong><br>
+信息论的终极目标是<strong>定义并逼近通信系统中数据压缩的物理上限（有效性）与信息传输速率的数学极限（可靠性）</strong>。</p>
+<p><strong>3. 研究对象：核心抽象与数学定义</strong><br>
+这门学科研究的核心对象是<strong>信息（Information）</strong>。在数学上，信息被严格抽象为<strong>随机变量不确定性的消除量</strong>。<br>
+为了实现这种抽象，香农借用了热力学中的“熵”概念，将信息量化为<strong>概率分布的函数</strong>。对于一个离散随机变量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span>，其信息熵定义为：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>P</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mi>log</mi><mo>⁡</mo><mi>P</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X) = -\sum_{i=1}^{n} P(x_i) \log P(x_i)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.9291em;vertical-align:-1.2777em;"></span><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>在信息论的视角下，<strong>研究对象不再是具体的“文字”或“声音”，而是这些信号背后的统计特性</strong>。通过这种严密的数学抽象，信息论得以摆脱复杂的语义纠缠，用统一的比特（bit）作为度量衡，去分析任何物理载体所承载的信息。</p>
+<h3 id="8-2-边界与极限">8.2 边界与极限</h3>
+<p><strong>4. 理论天花板：香农定义的物理边界</strong><br>
+这门学科的理论极限是由<strong>克劳德·香农（Claude Shannon）<strong>在 1948 年提出的。他通过</strong>香农三大定理</strong>为通信系统的三大核心性能指标划定了不可逾越的“天花板”：</p>
+<ul>
+<li><strong>有效性的天花板</strong>：由<strong>香农第一定理（无失真信源编码定理）<strong>定义。它规定了无损压缩的极限是</strong>信源熵 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mclose">)</span></span></span></span></strong>。任何编码的平均码长都不可能低于这个值，否则必然产生信息丢失。</li>
+<li><strong>可靠性的天花板</strong>：由<strong>香农第二定理（有噪信道编码定理）<strong>定义。它给出了著名的</strong>香农公式</strong>：</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mo>=</mo><mi>B</mi><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>S</mi><mi>N</mi></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C = B \log_2(1 + \frac{S}{N})
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:2.0463em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>这规定了在带宽 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> 和信噪比 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi mathvariant="normal">/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">S/N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> 给定的情况下，<strong>信道单位时间内能传输的最大可靠信息量</strong>。</p>
+<ul>
+<li><strong>有损压缩的天花板</strong>：由**香农第三定理（率失真理论）**定义。它通过 <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(D)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">)</span></span></span></span> 函数</strong> 规定了在允许一定失真 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> 的情况下，描述信源所需的最小信息速率。</li>
+</ul>
+<p><strong>5. 核心阻碍：现实物理世界中的扰动</strong><br>
+在将这些优美的数学理论应用于物理世界时，阻碍我们达到理论极限的核心干扰源主要有以下三个：</p>
+<ul>
+<li><strong>加性噪声（Additive Noise）</strong>：主要指<strong>热噪声</strong>。这是由于电子热运动产生的，存在于所有电子设备中。它直接限制了信噪比，从而压低了信道容量。</li>
+<li><strong>信道衰落（Fading）与多径效应</strong>：在无线通信中，信号会经过反射、折射到达接收端，导致信号幅度和相位随时间剧烈波动。这种<strong>不确定性的增加</strong>导致物理信道往往无法达到理想的高斯信道容量。</li>
+<li><strong>实现复杂度与时延的折衷（Trade-off）</strong>：香农证明了极限的存在，但其前提是<strong>码长趋于无穷大</strong>。在现实中，无穷长的码意味着<strong>无穷大的处理时延</strong>和<strong>指数级增长的计算复杂度</strong>。因此，我们在硬件资源有限、实时性要求高的环境下，必须在“接近极限”和“工程落地”之间做艰难的平衡。</li>
+</ul>
+<h3 id="8-3-核心方法和工具箱">8.3 核心方法和工具箱</h3>
+<p><strong>6. 技术分支：分而治之的子系统</strong><br>
+为了实现有效性、可靠性和安全性，信息论演化出了以下三大支柱性技术分支：</p>
+<ul>
+<li><strong>信源编码（Source Coding）</strong>：<br>
+负责解决<strong>有效性</strong>问题。其核心任务是<strong>去除冗余</strong>。通过对信号源的统计特性进行建模，将原始信息压缩到尽可能接近其熵极限。在面试中，你需要明确它是在信道的发送端完成的“瘦身”工作。</li>
+<li><strong>信道编码（Channel Coding）</strong>：<br>
+负责解决<strong>可靠性</strong>问题。其核心任务是<strong>抗干扰</strong>。通过在信息中人为添加受控的<strong>冗余度</strong>，使得接收端能够利用这种数学约束关系发现并纠正错误。它在物理上对抗的是噪声造成的随机性破坏。</li>
+<li><strong>率失真理论（Rate-Distortion Theory）</strong>：<br>
+负责解决<strong>资源折中</strong>问题。它为<strong>有损压缩</strong>提供了方法论，研究在给定的带宽资源下，如何保留最关键的信息，使得接收端感知的失真最小。它是 JPEG、MP3 等现代多媒体技术的理论源泉。</li>
+</ul>
+<p><strong>7. 数学工具：概率论与对数测度</strong><br>
+在这门学科中，最核心的数学工具是<strong>概率论与数理统计</strong>。</p>
+<ul>
+<li><strong>为什么非用它不可</strong>：<br>
+因为信息的本质是<strong>消除不确定性</strong>，而“不确定性”在数学上唯一的描述方式就是<strong>随机性</strong>。如果没有概率论，我们就无法量化一个事件发生的“意外程度”。</li>
+<li><strong>物理意义与关键工具</strong>：</li>
+</ul>
+<ol>
+<li><strong>负对数函数（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>log</mi><mo>⁡</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">-\log P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">−</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span>）</strong>：它是自信息的度量。物理上，它将<strong>概率的乘法逻辑转化为信息量的加法逻辑</strong>，这符合我们对信息可以累加的直观感受。</li>
+<li><strong>数学期望（Expectation）</strong>：熵（Entropy）本质上就是<strong>自信息的数学期望</strong>。它代表了信源在统计意义上的<strong>平均不确定性</strong>。在面试中应强调：信息论不关注单个符号，而是关注<strong>统计上的全局最优</strong>。</li>
+<li><strong>KL 散度（相对熵）</strong>：它是衡量两个分布之间“距离”的尺子。在人工智能中，它量化了模型预测分布与真实分布的偏离程度。</li>
+</ol>
+<h3 id="8-4-工程妥协和核心矛盾">8.4 工程妥协和核心矛盾</h3>
+<p><strong>8. 核心博弈：通信工程的三足鼎立（Trade-off）</strong><br>
+在实际工程落地时，信息论面临的最核心“跷跷板”是**有效性、可靠性与实现复杂度（时延）**之间的三方博弈。</p>
+<ul>
+<li><strong>有效性与可靠性的博弈</strong>：这是最基础的博弈。信源编码为了<strong>有效性</strong>拼命去冗余，而信道编码为了<strong>可靠性</strong>又不得不增加冗余。在带宽有限的条件下，增加纠错能力必然导致有效传输速率的下降。</li>
+<li><strong>性能与复杂度的博弈</strong>：香农证明了我们可以无限逼近信道容量，但代价是<strong>码长 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 必须趋于无穷大</strong>。在工程中，码长越长，解码的计算复杂度就呈指数级或高阶多项式级增长。</li>
+<li><strong>性能与时延的博弈</strong>：这是 5G/6G 时代最核心的矛盾。为了接近香农极限，我们需要大尺度的数据块进行编码（长码），但这会带来巨大的<strong>处理时延</strong>。对于自动驾驶或远程医疗等超低时延（URLLC）场景，我们往往必须<strong>牺牲一部分性能（偏离香农极限）来换取极短响应时间</strong>。</li>
+</ul>
+<p><strong>9. 理论假设：课本模型与现实世界的“鸿沟”</strong><br>
+为了让数学推导变得可行，课本上的理论模型通常做出了以下大胆的简化假设：</p>
+<ul>
+<li><strong>离散无记忆假设（DMS/DMC）</strong>：假设信源发出的符号之间、信道传输的前后码元之间是<strong>相互独立</strong>的。而现实中，语音、图像信号具有极强的<strong>相关性</strong>，物理信道也存在<strong>多径时散</strong>导致的记忆效应。</li>
+<li><strong>无限码长假设</strong>：这是香农定理成立的<strong>绝对前提</strong>。但在硬件实现中，寄存器和内存是有限的，码长只能取有限值，这导致实际系统中存在无法消除的<strong>性能误差（Finite Block-length Regime）</strong>。</li>
+<li><strong>平稳随机过程假设</strong>：假设信源和信道的统计特性（如概率分布、噪声方差）是不随时间改变的。现实中的移动通信信道是<strong>快衰落</strong>的，其统计特性在毫秒级内就会发生巨变。</li>
+<li><strong>加性高斯白噪声（AWGN）假设</strong>：假设噪声在所有频率上功率相同且服从高斯分布。虽然这简化了数学计算，但现实中存在<strong>窄带干扰、脉冲噪声和彩色噪声</strong>，这些都不符合理想的高斯分布。</li>
+</ul>
+<h3 id="8-5-学科纵横与前沿">8.5 学科纵横与前沿</h3>
+<p><strong>10. 学科脉络：通信知识大厦的中枢</strong><br>
+信息论在本科电子信息类专业中处于<strong>承上启下的核心枢纽地位</strong>，其逻辑关系可以概括为：</p>
+<ul>
+<li>
+<p><strong>上游基础课（理论之源）</strong>：</p>
+<ol>
+<li><strong>概率论与数理统计</strong>：这是信息论的<strong>母语</strong>。没有随机变量、期望和概率分布的概念，信息论的量化体系（熵、互信息）将无从谈起。</li>
+<li><strong>信号与系统</strong>：提供物理表示。它研究信号在时频域的特性，而信息论则在信号之上建立<strong>统计抽象</strong>，告诉我们这些波形背后承载的“干货”极限是多少。</li>
+</ol>
+</li>
+<li>
+<p><strong>下游应用课（工程落地）</strong>：</p>
+<ol>
+<li><strong>通信原理</strong>：是信息论的<strong>最直接实现</strong>。信原中的调制、同步、均衡技术，本质上都是为了实现在物理层面上向香农极限逼近。</li>
+<li><strong>无线通信/6G 技术</strong>：是信息论在复杂物理环境下的<strong>延伸</strong>。研究在多径、衰落、高速移动等极端条件下，如何通过 MIMO、波束赋形等手段最大化信道容量。</li>
+<li><strong>信息安全/密码学</strong>：是信息论的<strong>防御性分支</strong>。它利用熵的概念来衡量密钥的随机性，以及破译信息的代价。</li>
+</ol>
+</li>
+</ul>
+<p><strong>11. 前沿方向：超越香农的下个时代</strong><br>
+当前，经典信息论已经将比特传输做到了极致（LDPC 和 Polar 码已极度逼近极限），学科正在面临从“传得快”向“传得准/传得深”的质变：</p>
+<ul>
+<li>
+<p><strong>技术瓶颈：香农极限的红利枯竭</strong>：<br>
+在传统的比特传输维度，信道容量的提升已遭遇物理瓶颈。随着带宽和功率的投入边际效益递减，仅靠增加物理资源已难以满足 6G 时代千倍量级的增长需求。</p>
+</li>
+<li>
+<p><strong>演进方向一：语义通信（Semantic Communication）</strong>：<br>
+这是当前学术界最火的方向。经典信息论只关注“如何准确传比特”，而语义通信关注**“如何让接收方准确理解意图”<strong>。通过 AI 提取信息的</strong>深层语义特征**，可以实现在极低比特率下传输极其丰富的含义，从而打破传统香农极限对通信效率的束缚。</p>
+</li>
+<li>
+<p><strong>演进方向二：通感一体化（ISAC）</strong>：<br>
+未来的通信不仅是传信息，还要具备环境感知能力。信息论正在演进为一种<strong>感知-通信耦合的理论</strong>，探讨如何在同一频谱资源下，同时最大化通信速率和目标的探测精度。</p>
+</li>
+<li>
+<p><strong>演进方向三：极低时延与海量连接</strong>：<br>
+在 6G 场景下，传统的“码长无限长”假设失效。<strong>有限码长信息论</strong>（Finite Block-length Information Theory）成为研究重点，旨在解决工业自动化中超短包、高实时性的理论边界问题。</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://momingxiaoyang.github.io">莫名小痒</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://momingxiaoyang.github.io/2026/03/14/%E4%BF%A1%E6%81%AF%E8%AE%BA/">https://momingxiaoyang.github.io/2026/03/14/%E4%BF%A1%E6%81%AF%E8%AE%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://momingxiaoyang.github.io" target="_blank">莫名小痒的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%80%83%E7%A0%94/">考研</a><a class="post-meta__tags" href="/tags/%E5%A4%8D%E8%AF%95/">复试</a><a class="post-meta__tags" href="/tags/%E4%BF%A1%E6%81%AF%E8%AE%BA/">信息论</a></div><div class="post_share"><div class="social-share" data-image="/./img/KaoYan/fushi/dontKonw.pic.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2026/03/13/Verilog/" title="数字集成电路Verilog详细内容"><img class="cover" src="/./img/KaoYan/fushi/theBug.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2026-03-13</div><div class="title">数字集成电路Verilog详细内容</div></div></a></div><div><a href="/2026/03/12/EnglishManuscript/" title="EnglishManuscript"><img class="cover" src="/./img/KaoYan/fushi/whatTheDogDoing.pic.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2026-03-12</div><div class="title">EnglishManuscript</div></div></a></div><div><a href="/2026/03/15/%E7%94%B5%E8%B7%AF/" title="模拟电路详细内容"><img class="cover" src="/./img/KaoYan/fushi/reviewAndPreview.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2026-03-15</div><div class="title">模拟电路详细内容</div></div></a></div><div><a href="/2026/03/14/%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1/" title="移动通信详细内容"><img class="cover" src="/./img/KaoYan/fushi/dogAndPhone.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2026-03-14</div><div class="title">移动通信详细内容</div></div></a></div><div><a href="/2026/03/11/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/" title="通信原理详细内容"><img class="cover" src="/./img/KaoYan/fushi/tongxinyuanli_fengmian.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2026-03-11</div><div class="title">通信原理详细内容</div></div></a></div><div><a href="/2024/09/24/%E5%BC%A0%E5%AE%871000%E9%A2%98%E5%BC%BA%E5%8C%96%E7%AF%87%E6%80%BB%E7%BB%93%C2%B7%E7%AC%AC%E4%B8%89%E7%AB%A0/" title="张宇1000题强化篇总结·第三章"><img class="cover" src="/./img/KaoYan/Math/1000ShangHao.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-09-24</div><div class="title">张宇1000题强化篇总结·第三章</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/head_sculpture.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">莫名小痒</div><div class="author-info__description">MoMingXiaoYang</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">45</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">34</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/momingxiaoyang/"><i class="fab fa-github"></i><span>My github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/momingxiaoyang" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:momingxiaoyang@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://baidu.com/" target="_blank" title="百度"><i class="fa-solid fa-magnifying-glass"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果博客帮得到你，请线下真实我！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">信息论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BF%A1%E6%81%AF%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">一、信息的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BF%A1%E6%81%AF%E9%87%8F%E3%80%81%E4%BF%A1%E6%81%AF%E7%86%B5%E3%80%81%E6%9D%A1%E4%BB%B6%E7%86%B5"><span class="toc-text">二、信息量、信息熵、条件熵</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E4%BF%A1%E6%81%AF%E9%87%8F"><span class="toc-text">2.1 信息量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E4%BF%A1%E6%81%AF%E7%86%B5"><span class="toc-text">2.2 信息熵</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E6%9D%A1%E4%BB%B6%E7%86%B5"><span class="toc-text">2.3 条件熵</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E4%BF%A1%E6%81%AF%E8%AE%BA%E4%B8%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD"><span class="toc-text">2.4 信息论与人工智能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E9%A6%99%E5%86%9C%E4%B8%89%E5%A4%A7%E5%AE%9A%E5%BE%8B"><span class="toc-text">四、香农三大定律</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E9%A6%99%E5%86%9C%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B"><span class="toc-text">4.1 香农第一定律</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E9%A6%99%E5%86%9C%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B"><span class="toc-text">4.2 香农第二定律</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E9%A6%99%E5%86%9C%E7%AC%AC%E4%B8%89%E5%AE%9A%E5%BE%8B"><span class="toc-text">4.3 香农第三定律</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E4%BF%A1%E6%BA%90%E7%BC%96%E7%A0%81"><span class="toc-text">五、信源编码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E6%97%A0%E5%A4%B1%E7%9C%9F%E7%BC%96%E7%A0%81"><span class="toc-text">5.1 无失真编码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E9%99%90%E5%A4%B1%E7%9C%9F%E7%BC%96%E7%A0%81"><span class="toc-text">5.2 限失真编码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E4%BF%A1%E6%BA%90%E7%BC%96%E7%A0%81%E7%9A%84%E6%A0%B8%E5%BF%83%E8%AF%84%E4%BB%B7%E6%A0%87%E5%87%86"><span class="toc-text">5.3 信源编码的核心评价标准</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E4%BF%A1%E9%81%93%E7%BC%96%E7%A0%81"><span class="toc-text">六、信道编码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E4%BF%A1%E9%81%93%E7%BC%96%E7%A0%81%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="toc-text">6.1 信道编码的本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E4%BF%A1%E9%81%93%E7%BC%96%E7%A0%81%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="toc-text">6.2 信道编码发展历程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-text">七、常见问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%9A%84%E5%AD%A6%E7%A7%91%E6%8E%A2%E7%B4%A2"><span class="toc-text">八、信息论的学科探索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-%E6%BA%AF%E6%BA%90%E4%B8%8E%E7%BB%88%E6%9E%81%E7%9B%AE%E6%A0%87"><span class="toc-text">8.1 溯源与终极目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2-%E8%BE%B9%E7%95%8C%E4%B8%8E%E6%9E%81%E9%99%90"><span class="toc-text">8.2 边界与极限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-3-%E6%A0%B8%E5%BF%83%E6%96%B9%E6%B3%95%E5%92%8C%E5%B7%A5%E5%85%B7%E7%AE%B1"><span class="toc-text">8.3 核心方法和工具箱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-4-%E5%B7%A5%E7%A8%8B%E5%A6%A5%E5%8D%8F%E5%92%8C%E6%A0%B8%E5%BF%83%E7%9F%9B%E7%9B%BE"><span class="toc-text">8.4 工程妥协和核心矛盾</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-5-%E5%AD%A6%E7%A7%91%E7%BA%B5%E6%A8%AA%E4%B8%8E%E5%89%8D%E6%B2%BF"><span class="toc-text">8.5 学科纵横与前沿</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/03/15/%E7%94%B5%E8%B7%AF/" title="模拟电路详细内容"><img src="/./img/KaoYan/fushi/reviewAndPreview.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="模拟电路详细内容"/></a><div class="content"><a class="title" href="/2026/03/15/%E7%94%B5%E8%B7%AF/" title="模拟电路详细内容">模拟电路详细内容</a><time datetime="2026-03-15T04:00:01.000Z" title="发表于 2026-03-15 12:00:01">2026-03-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/14/%E4%BF%A1%E6%81%AF%E8%AE%BA/" title="信息论详细内容"><img src="/./img/KaoYan/fushi/dontKonw.pic.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="信息论详细内容"/></a><div class="content"><a class="title" href="/2026/03/14/%E4%BF%A1%E6%81%AF%E8%AE%BA/" title="信息论详细内容">信息论详细内容</a><time datetime="2026-03-14T10:00:00.000Z" title="发表于 2026-03-14 18:00:00">2026-03-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/14/%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1/" title="移动通信详细内容"><img src="/./img/KaoYan/fushi/dogAndPhone.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="移动通信详细内容"/></a><div class="content"><a class="title" href="/2026/03/14/%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1/" title="移动通信详细内容">移动通信详细内容</a><time datetime="2026-03-14T04:00:01.000Z" title="发表于 2026-03-14 12:00:01">2026-03-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/13/Verilog/" title="数字集成电路Verilog详细内容"><img src="/./img/KaoYan/fushi/theBug.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数字集成电路Verilog详细内容"/></a><div class="content"><a class="title" href="/2026/03/13/Verilog/" title="数字集成电路Verilog详细内容">数字集成电路Verilog详细内容</a><time datetime="2026-03-13T04:00:01.000Z" title="发表于 2026-03-13 12:00:01">2026-03-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/12/EnglishManuscript/" title="EnglishManuscript"><img src="/./img/KaoYan/fushi/whatTheDogDoing.pic.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="EnglishManuscript"/></a><div class="content"><a class="title" href="/2026/03/12/EnglishManuscript/" title="EnglishManuscript">EnglishManuscript</a><time datetime="2026-03-12T04:00:01.000Z" title="发表于 2026-03-12 12:00:01">2026-03-12</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/../img/KaoYan/fushi/%E3%80%90%E5%93%B2%E9%A3%8E%E5%A3%81%E7%BA%B8%E3%80%91%E4%BF%A1%E6%81%AF%E6%B5%81%E8%BD%AC-%E5%83%8F%E7%B4%A0%E9%A3%8E%E6%A0%BC%20(1).png')"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2026 By 莫名小痒</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">这里已经是底部啦(´･Д･)」</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addModeChange('mermaid', runMermaid)
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script id="canvas_nest" defer="defer" color="0,222,255" opacity="0.4" zIndex="-1" count="300" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
